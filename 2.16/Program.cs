@@ -4,16 +4,29 @@
 // 25, 5 -> да
 // 8,9 -> нет
 
-Console.Write("Введите первое число: ");
+// Console.Write("Введите первое число: "); // одно решение
+// int numOne = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int numTwo = Convert.ToInt32(Console.ReadLine());
+
+// int Kvadrat(int num1, int num2)
+// {
+//     return num1 * num1 == num2 || num2 * num2 == num1 ? 1 : 0;
+// }
+
+// int result = Kvadrat(numOne, numTwo);
+// string res = result == 1 ? "yes" : "no";
+// Console.Write($"{numOne}, {numTwo} -> {res}");
+
+Console.Write("Введите первое число: "); // второе решение
 int numOne = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int numTwo = Convert.ToInt32(Console.ReadLine());
 
-int Kvadrat(int num1, int num2)
+bool Kvadrat(int num1, int num2)
 {
-    return num1 * num1 == num2 || num2 * num2 == num1 ? 1 : 0;
+    return num1 * num1 == num2 || num2 * num2 == num1;
 }
 
-int result = Kvadrat(numOne, numTwo);
-string res = result == 1 ? "yes" : "no";
-Console.Write($"{numOne}, {numTwo} -> {res}");
+if (Kvadrat(numOne, numTwo)) Console.Write($"{numOne}, {numTwo} -> yes");
+else Console.Write($"{numOne}, {numTwo} -> no");
