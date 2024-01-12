@@ -32,6 +32,9 @@ int NumMax(int num) // функция
     return numOne > numTwo ? numOne : numTwo;
 }
 
-int result = NumMax(numRandom); // вызываем функцию и передаем в нее аргумент
-string res = result == -1 ? "Цифры одинаковые" : result.ToString(); // приобразовываем -1 в текстовую информацию
-Console.WriteLine($"{numRandom} -> {res}");
+// int result = NumMax(numRandom); // вызываем функцию и передаем в нее аргумент
+// string res = result == -1 ? "Цифры одинаковые" : result.ToString(); // приобразовываем -1 в текстовую информацию
+// Console.WriteLine($"{numRandom} -> {res}");
+
+string result = NumMax(numRandom) == -1 ? "Цифры одинаковые" : NumMax(numRandom).ToString(); // приобразовываем -1 в текстовую информацию
+Console.WriteLine($"{numRandom} -> {result}");
