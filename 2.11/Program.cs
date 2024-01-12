@@ -7,8 +7,8 @@ int numRandom = new Random().Next(100, 1000);
 
 int delNum(int num)
 {
-    int numOne = numRandom / 100;
-    int numTwo = numRandom % 10;
+    int numOne = num / 100;
+    int numTwo = num % 10;
     return numOne * 10 + numTwo;
 }
 
