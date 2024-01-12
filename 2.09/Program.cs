@@ -26,8 +26,8 @@ int numRandom = new Random().Next(10, 100);
 
 int NumMax(int num) // функция
 {
-    int numOne = numRandom / 10;
-    int numTwo = numRandom % 10;
+    int numOne = num / 10;
+    int numTwo = num % 10;
     if(numOne == numTwo) return -1; // -1 - возвращаемое значение что цифры равны
     return numOne > numTwo ? numOne : numTwo;
 }
