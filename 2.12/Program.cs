@@ -22,7 +22,6 @@ int Krat(int num1, int num2)
     return num1 % num2 == 0 ? -1 : num1 % num2;
 }
 
-int result = Krat(numOne, numTwo);
-string res = result == -1 ? "кратно" : $"не кратно, остаток {result.ToString()}";
-Console.Write($"{numOne}, {numTwo} -> {res}");
+string result = Krat(numOne, numTwo) == -1 ? "кратно" : $"не кратно, остаток {Krat(numOne, numTwo).ToString()}";
+Console.Write($"{numOne}, {numTwo} -> {result}");
 
