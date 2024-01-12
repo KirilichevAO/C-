@@ -12,5 +12,4 @@ int delNum(int num)
     return numOne * 10 + numTwo;
 }
 
-int result = delNum(numRandom);
-Console.WriteLine($"{numRandom} -> {result}");
+Console.WriteLine($"{numRandom} -> {delNum(numRandom)}");
